@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EIT-Ba-iXZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hf-aC-5BW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmF-Lq-oKd">
+                                <rect key="frame" x="171.5" y="457" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KmF-Lq-oKd" secondAttribute="height" multiplier="31:30" id="evT-fm-PNa"/>
+                                </constraints>
+                                <state key="normal" title="点我"/>
+                                <connections>
+                                    <action selector="btn2_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P0D-LV-xxT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGl-9Z-NLR">
+                                <rect key="frame" x="171.5" y="120" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bGl-9Z-NLR" secondAttribute="height" multiplier="31:30" id="s8r-Mi-yrQ"/>
+                                </constraints>
+                                <state key="normal" title="点我"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtC-sd-e4R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KmF-Lq-oKd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5NF-2K-Iyz"/>
+                            <constraint firstItem="bGl-9Z-NLR" firstAttribute="top" secondItem="EIT-Ba-iXZ" secondAttribute="bottom" constant="100" id="MaD-8Z-wQo"/>
+                            <constraint firstItem="2hf-aC-5BW" firstAttribute="top" secondItem="KmF-Lq-oKd" secondAttribute="bottom" constant="180" id="PE2-DP-8SJ"/>
+                            <constraint firstItem="bGl-9Z-NLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i6q-DO-331"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="bGl-9Z-NLR" id="7Ze-mU-R06"/>
+                        <outlet property="btn2" destination="KmF-Lq-oKd" id="9tm-zR-ckw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
